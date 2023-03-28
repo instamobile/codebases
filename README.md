@@ -15,7 +15,7 @@ Open the Terminal, locate the React Native project (make sure you are in the fol
 yarn install && expo start
 ```
 
-Our apps are basic Expo apps, so this is all you need to do. If you have any issues with running the app, you need to make sure Expo works fine on your laptop - check out [Expo documentation](https://expo.dev/).
+Our apps are basic Expo apps, so this is all you need to do. If you have any issues with running the app, you need to make sure Expo works fine on your machine - check out [Expo documentation](https://expo.dev/).
 
 ## Integrating Your Own Firebase
 
