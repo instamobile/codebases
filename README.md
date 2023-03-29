@@ -67,7 +67,7 @@ service firebase.storage {
 
 ### Deploying Firebase Functions
 
-You can find all the firebase functions related to the projects in the firebase/ folder. You need to follow the documentation from Firebase on [how to deploy these functions to your own projects](https://firebase.google.com/docs/functions/get-started).
+You can find all the firebase functions related to the projects in the `firebase/` folder. You need to follow the documentation from Firebase on [how to deploy these functions to your own projects](https://firebase.google.com/docs/functions/get-started).
 
 
 Once you deployed the Firebase Functions, **please add the `allUsers` permission to `uploadMedia` function in [Google Cloud Console](https://console.cloud.google.com/functions) - this is needed to be able to upload media from web.**
