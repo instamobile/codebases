@@ -84,4 +84,10 @@ Then head over to `src/core/firebase/config.js` and override the Authorization f
       'Content-Type': 'application/json',
     },
   }
-  ````
+```
+
+Notice: Push notifications won't work while developing using the Expo app, as you cannot retrieve a certificate from Apple for the Expo App ID. You will need to create your own app binary (which is needed for the app store submission anyway), in order to see push notifications working.
+
+One you have your own app binary (e.g. by ejecting from Expo), you can follow [these instructions](https://instamobile.io/docs/documentation/push-notifications/push-notifications-on-ios/) to
+1. Get a push notification certificate
+2. Upload it to Firebase
