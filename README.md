@@ -91,3 +91,5 @@ Notice: Push notifications won't work while developing using the Expo app, as yo
 One you have your own app binary (e.g. by ejecting from Expo), you can follow [these instructions](https://instamobile.io/docs/documentation/push-notifications/push-notifications-on-ios/) to
 1. Get a push notification certificate
 2. Upload it to Firebase
+
+Make you your App ID matches the app ID from Firebase, which matches the Bundle ID of the iOS project and the App ID of the certificate.
