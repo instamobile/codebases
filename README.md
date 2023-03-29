@@ -71,3 +71,17 @@ You can find all the firebase functions related to the projects in the firebase/
 
 
 Once you deployed the Firebase Functions, **please add the `allUsers` permission to `uploadMedia` function in [Google Cloud Console](https://console.cloud.google.com/functions) - this is needed to be able to upload media from web.**
+
+### Enable Push Notifications
+In order for push notifications to work properly, you need to retrieve from Firebase your own authorization key for the project, in Project Settings -> Cloud Messaging.
+
+Then head over to `src/core/firebase/config.js` and override the Authorization field of the `retrieveFCMTokenForPushToken` method.
+
+```  let config = {
+    headers: {
+      Authorization:
+        'key=AAAA_-2JkDo:APA91bFPHWEtBQfcPnMQbiahs4-5ikZDcbXrK_PuD8bTdKhhNjNhb0rwbpEOkMQx_YOJWIeJLWLB9-1iwm5KaFYo8kxz5ygjJ9DFLL0caG9oigCa-hh5qKsFA-Zyrd-r3v_v8NqAUYy_',
+      'Content-Type': 'application/json',
+    },
+  }
+  ````
